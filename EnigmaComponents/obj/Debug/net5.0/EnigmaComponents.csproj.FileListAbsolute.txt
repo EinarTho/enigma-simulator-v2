@@ -1,0 +1,12 @@
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.deps.json
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.dll
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/bin/Debug/net5.0/ref/EnigmaComponents.dll
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.pdb
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.AssemblyReference.cache
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.GeneratedMSBuildEditorConfig.editorconfig
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.AssemblyInfoInputs.cache
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.AssemblyInfo.cs
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.CoreCompileInputs.cache
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.dll
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/ref/EnigmaComponents.dll
+/Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.pdb
