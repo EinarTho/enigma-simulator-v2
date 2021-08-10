@@ -9,11 +9,13 @@ namespace Enigma
     {
         static void Main(string[] args)
         {
-            string plugboard = "ADOBJNTHVEKMLFCWQRXGYIPSUZ"; //letter on the position representing itself is not encoded
-            string reflector = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
-            string rotorOne = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
-            string rotorTwo = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
-            string rotorThree = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+            var plugboard = "ADOBJNTHVEKMLFCWQRXGYIPSUZ"; //letter on the position representing itself is not encoded
+            var reflector = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
+            var rotorOne = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
+            var rotorTwo = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
+            var rotorThree = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+            var rotorFour = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+
 
             bool programClose = false;
             while (!programClose)

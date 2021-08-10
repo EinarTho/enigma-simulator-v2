@@ -10,3 +10,15 @@
 /Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.dll
 /Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/ref/EnigmaComponents.dll
 /Users/einarthomasen/Code/enigma-simulator/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.pdb
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\bin\Debug\net5.0\EnigmaComponents.deps.json
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\bin\Debug\net5.0\EnigmaComponents.dll
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\bin\Debug\net5.0\ref\EnigmaComponents.dll
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\bin\Debug\net5.0\EnigmaComponents.pdb
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.csproj.AssemblyReference.cache
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.AssemblyInfoInputs.cache
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.AssemblyInfo.cs
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.csproj.CoreCompileInputs.cache
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.dll
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\ref\EnigmaComponents.dll
+C:\Users\einthoma\code\enigma-simulator-v2\EnigmaComponents\obj\Debug\net5.0\EnigmaComponents.pdb
