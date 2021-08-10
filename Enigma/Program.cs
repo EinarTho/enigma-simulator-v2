@@ -14,7 +14,8 @@ namespace Enigma
             var rotorOne = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
             var rotorTwo = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
             var rotorThree = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
-            var rotorFour = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+            var testtring = "I am a teststring";
+            var testStromgTwp = "I am testring two";
 
 
             bool programClose = false;

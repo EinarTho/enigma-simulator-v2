@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1825ceb-4f86-4dd2-a2c0-c32a1615077e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.enigma-simulator/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enigma/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EnigmaComponents/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/Enigma.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/EnigmaComponents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/EnigmaComponents.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/EnigmaComponents.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/bin/Debug/net5.0/EnigmaComponents.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/obj/Debug/net5.0/Enigma.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents.Tests/EnigmaComponents.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents.Tests/EnigmaComponents.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents.Tests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents.Tests/obj/Debug/net5.0/EnigmaComponents.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/bin/Debug/net5.0/EnigmaComponents.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaComponents/obj/Debug/net5.0/EnigmaComponents.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/obj/Debug/net5.0/UI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UI/obj/Debug/net5.0/UI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.enigma-simulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.enigma-simulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enigma/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628596558075</updated>
-      <workItem from="1628596578410" duration="375000" />
+      <workItem from="1628596578410" duration="1570000" />
     </task>
     <servers />
   </component>
