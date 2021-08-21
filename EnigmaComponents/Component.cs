@@ -12,8 +12,6 @@ namespace EnigmaComponents
         }
         public int Encode(int letter, bool isBeforeReflector)
         {
-            Console.WriteLine("Line 15");
-            Console.WriteLine(letter);
             foreach(int i in config)
             {
                 Console.WriteLine(i);
@@ -26,8 +24,6 @@ namespace EnigmaComponents
         }
         public int Encode(int letter)
         {
-            Console.WriteLine("Do I ever get called?");
-            Console.WriteLine(letter);
             if (letter < 13)
             {
                 return config[letter];
