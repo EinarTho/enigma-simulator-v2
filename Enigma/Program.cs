@@ -15,6 +15,7 @@ namespace Enigma
             var rotorTwo = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
             var rotorThree = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
             var rotorFour = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+            var rotorFive = "BDFHJLCPRTXVZNYEIWGAKMUSQO";§
 
 
             bool programClose = false;
