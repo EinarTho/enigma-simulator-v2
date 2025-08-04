@@ -1,0 +1,12 @@
+/Users/einarthomasen/code/enigma-simulator-v2/UI/bin/Debug/net8.0/UI.deps.json
+/Users/einarthomasen/code/enigma-simulator-v2/UI/bin/Debug/net8.0/UI.dll
+/Users/einarthomasen/code/enigma-simulator-v2/UI/bin/Debug/net8.0/UI.pdb
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.AssemblyInfoInputs.cache
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.AssemblyInfo.cs
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.csproj.CoreCompileInputs.cache
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.sourcelink.json
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.dll
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/refint/UI.dll
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/UI.pdb
+/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/Debug/net8.0/ref/UI.dll

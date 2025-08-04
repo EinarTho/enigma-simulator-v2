@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "/Users/einarthomasen/.nuget/packages/": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/einarthomasen/Code/enigma-simulator/UI/UI.csproj",
+      "projectUniqueName": "/Users/einarthomasen/code/enigma-simulator-v2/UI/UI.csproj",
       "projectName": "UI",
-      "projectPath": "/Users/einarthomasen/Code/enigma-simulator/UI/UI.csproj",
+      "projectPath": "/Users/einarthomasen/code/enigma-simulator-v2/UI/UI.csproj",
       "packagesPath": "/Users/einarthomasen/.nuget/packages/",
-      "outputPath": "/Users/einarthomasen/Code/enigma-simulator/UI/obj/",
+      "outputPath": "/Users/einarthomasen/code/enigma-simulator-v2/UI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/einarthomasen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -41,15 +41,16 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

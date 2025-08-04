@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\einthoma\\.dotnet\\store\\|arch|\\|tfm|",
-      "/Users/einarthomasen/.nuget/packages/"
+      "/Users/einarthomasen/.dotnet/store/|arch|/|tfm|",
+      "/Users/einarthomasen/.nuget/packages"
     ]
   }
 }
