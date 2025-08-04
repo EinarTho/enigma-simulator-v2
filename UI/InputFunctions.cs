@@ -4,44 +4,95 @@ using System.Text.RegularExpressions;
 
 namespace UI
 {
-    public static class InputFunctions
+    public static class EnigmaUI
     {
-        public static List<int> GetRotorInput()
+        private const int MaxRotorPosition = 25;
+        private const int MinRotorPosition = 0;
+
+        public static List<int> GetRotorPositions()
         {
-            List<int> rotorPositions = new List<int>();
+            var rotorPositions = new List<int>();
+            var rotorNames = new[] { "left", "middle", "right" };
+
+            Console.WriteLine("=== Enigma Machine Configuration ===");
+            Console.WriteLine($"Enter rotor positions (0-{MaxRotorPosition}):");
+
             for (int i = 0; i < 3; i++)
             {
-                bool isAnswerinRightFormat = false;
-                while (!isAnswerinRightFormat)
-                {
-                    Console.WriteLine("Hello! Type the in the position of rotor 1 (number between 0 and 25):");
-                    string answer = Console.ReadLine();
-                    isAnswerinRightFormat = Int32.TryParse(answer, out int rotorPosition);
-                    if (isAnswerinRightFormat && rotorPosition > -1 && rotorPosition < 26) //this way of doing it is a bit strange
-                    {
-                        rotorPositions.Add(rotorPosition);
-                    }
-                }
+                rotorPositions.Add(GetValidRotorPosition(rotorNames[i]));
             }
+
             return rotorPositions;
         }
+
         public static string GetTextToEncode()
         {
-            bool isTextInRightFormat = false;
-            string textToEncode = "";
-            while (!isTextInRightFormat)
+            Console.WriteLine("\n=== Text Encoding ===");
+            Console.WriteLine("Enter text to encode (letters only, spaces and punctuation will be preserved):");
+            
+            string input = Console.ReadLine();
+            if (string.IsNullOrEmpty(input))
             {
-                Console.WriteLine("Type in the string you which to decode (only characters in the english alphabet)");
-                textToEncode = Console.ReadLine();
-                isTextInRightFormat = true;
-                Regex rx = new Regex("^[a-zA-Z]*$");
-                Console.WriteLine(rx.IsMatch(textToEncode));
-                if (!rx.IsMatch(textToEncode))
+                return string.Empty;
+            }
+
+            return input;
+        }
+
+        public static bool AskToContinue()
+        {
+            Console.WriteLine("\nWould you like to encode another message? (y/n):");
+            string response = Console.ReadLine()?.Trim().ToLower();
+            return response == "y" || response == "yes";
+        }
+
+        public static void DisplayConfiguration(string configuration)
+        {
+            Console.WriteLine($"\nCurrent configuration: {configuration}");
+        }
+
+        public static void DisplayResult(string original, string encoded)
+        {
+            Console.WriteLine("\n=== Encoding Result ===");
+            Console.WriteLine($"Original: {original}");
+            Console.WriteLine($"Encoded:  {encoded}");
+        }
+
+        public static void DisplayWelcome()
+        {
+            Console.WriteLine("=== Enigma Machine Simulator ===");
+            Console.WriteLine("This simulator encodes text using the same principles as the historical Enigma machine.");
+            Console.WriteLine();
+        }
+
+        private static int GetValidRotorPosition(string rotorName)
+        {
+            while (true)
+            {
+                Console.Write($"Enter position for {rotorName} rotor (0-{MaxRotorPosition}): ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int position))
                 {
-                    isTextInRightFormat = false;
+                    if (position >= MinRotorPosition && position <= MaxRotorPosition)
+                    {
+                        return position;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Position must be between {MinRotorPosition} and {MaxRotorPosition}.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid number.");
                 }
             }
-            return textToEncode;
+        }
+
+        public static void DisplayError(string message)
+        {
+            Console.WriteLine($"Error: {message}");
         }
     }
 }

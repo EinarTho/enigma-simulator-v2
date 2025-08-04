@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+FIRt7X1UaCABboENBlHAaF4eMYaUDKcDDqBWGBr9zjEt4yXDMn4DuhEt2hNYdymnPLtsz/yc72K5ZS2rOP3Sg==",
+  "dgSpecHash": "9kc2JtqP/Uu1e40s4ldMgUcW86gOzIW+E/zGAxwlXIzD1QrcPtzvLtBbc1dfijoD1Kk+00hWX3XPPX37Ldqbww==",
   "success": true,
-  "projectFilePath": "/Users/einarthomasen/Code/enigma-simulator/Enigma/Enigma.csproj",
+  "projectFilePath": "/Users/einarthomasen/code/enigma-simulator-v2/Enigma/Enigma.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

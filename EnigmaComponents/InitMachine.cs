@@ -1,40 +1,67 @@
+using System;
 using System.Collections.Generic;
 
 namespace EnigmaComponents
 {
-    public static class InitMachine
+    public static class EnigmaMachineFactory
     {
-        public static EnigmaMachine InitialiseMachine(string plugBoardConfig, string reflectorConfig, string rotorOneConfig, string rotorTwoConfig, string rotorThreeConfig, List<int> rotorPositions = null)
+        public static EnigmaMachine CreateMachine(string leftRotorName, string middleRotorName, string rightRotorName, 
+            string reflectorName, string plugboardConfig = null, int leftPosition = 0, int middlePosition = 0, int rightPosition = 0,
+            int leftRingSetting = 0, int middleRingSetting = 0, int rightRingSetting = 0)
         {
-            Rotor rotorOne = new Rotor(MakeRotorConfig(rotorOneConfig), 1);
-            Rotor rotorTwo = new Rotor(MakeRotorConfig(rotorTwoConfig), 2);
-            Rotor rotorThree = new Rotor(MakeRotorConfig(rotorThreeConfig), 3);
-            Component plugBoard = new Component(MakeReflectorOrPlugboardConfig(plugBoardConfig));
-            Component reflector = new Component(MakeReflectorOrPlugboardConfig(reflectorConfig));
-            EnigmaMachine machine = new EnigmaMachine(rotorOne, rotorTwo, rotorThree, plugBoard, reflector, rotorPositions);
-            return machine;
+            // Validate rotor names
+            if (!EnigmaConfiguration.RotorWirings.ContainsKey(leftRotorName))
+                throw new ArgumentException($"Invalid left rotor name: {leftRotorName}", nameof(leftRotorName));
+            if (!EnigmaConfiguration.RotorWirings.ContainsKey(middleRotorName))
+                throw new ArgumentException($"Invalid middle rotor name: {middleRotorName}", nameof(middleRotorName));
+            if (!EnigmaConfiguration.RotorWirings.ContainsKey(rightRotorName))
+                throw new ArgumentException($"Invalid right rotor name: {rightRotorName}", nameof(rightRotorName));
+
+            // Validate reflector name
+            if (!EnigmaConfiguration.ReflectorWirings.ContainsKey(reflectorName))
+                throw new ArgumentException($"Invalid reflector name: {reflectorName}", nameof(reflectorName));
+
+            // Create rotors
+            var leftRotor = CreateRotor(leftRotorName, leftPosition, leftRingSetting);
+            var middleRotor = CreateRotor(middleRotorName, middlePosition, middleRingSetting);
+            var rightRotor = CreateRotor(rightRotorName, rightPosition, rightRingSetting);
+
+            // Create plugboard
+            var plugboard = new Plugboard(plugboardConfig ?? EnigmaConfiguration.DefaultPlugboard);
+
+            // Create reflector
+            var reflector = new Reflector(EnigmaConfiguration.ReflectorWirings[reflectorName]);
+
+            return new EnigmaMachine(leftRotor, middleRotor, rightRotor, plugboard, reflector);
         }
-        private static List<int> MakeRotorConfig(string configString)
+
+        private static Rotor CreateRotor(string rotorName, int position, int ringSetting)
         {
-            List<int> config = new List<int>();
-            foreach (char c in configString.ToLower())
+            var wiring = EnigmaConfiguration.RotorWirings[rotorName];
+            var notchPosition = EnigmaConfiguration.RotorNotches[rotorName];
+            var config = CreateRotorConfig(wiring);
+            
+            return new Rotor(rotorName, config, notchPosition, position, ringSetting);
+        }
+
+        private static List<int> CreateRotorConfig(string configString)
+        {
+            if (string.IsNullOrEmpty(configString) || configString.Length != EnigmaConfiguration.AlphabetSize)
+            {
+                throw new ArgumentException($"Rotor configuration must be exactly {EnigmaConfiguration.AlphabetSize} characters long", nameof(configString));
+            }
+
+            var config = new List<int>();
+            foreach (char c in configString.ToUpper())
             {
                 config.Add(EnigmaMachine.ConvertLetterToNumber(c));
             }
             return config;
         }
-        private static List<int> MakeReflectorOrPlugboardConfig(string configString)
+
+        public static EnigmaMachine CreateDefaultMachine()
         {
-            List<int> config = new List<int>();
-            foreach (char c in configString.ToLower())
-            {
-                int letterAsInt = EnigmaMachine.ConvertLetterToNumber(c);
-                if (letterAsInt > 12)
-                {
-                    config.Add(letterAsInt);
-                }
-            }
-            return config;
+            return CreateMachine("I", "II", "III", "B");
         }
     }
 }

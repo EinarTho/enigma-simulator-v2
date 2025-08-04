@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d/VEK08XQ4jwtRaVHkW+vSNsa1BWKeP02gej2iZjV/b7v6+yAhE7BbjiyL5k4EqNsIJA3dL/l22C/V+qZ1nEvA==",
+  "dgSpecHash": "43FFiX/RDUhlA8FWnjZr7Xfp17nLdZi3FxE9fifgOj3x0xTus3B/USu002qFDMRzDcp2e6m2AMR+NTlYTHsRfA==",
   "success": true,
-  "projectFilePath": "/Users/einarthomasen/Code/enigma-simulator/UI/UI.csproj",
+  "projectFilePath": "/Users/einarthomasen/code/enigma-simulator-v2/UI/UI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

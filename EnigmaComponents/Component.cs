@@ -3,36 +3,39 @@ using System.Collections.Generic;
 
 namespace EnigmaComponents
 {
-   public class Component
+    public class Component : IComponent
     {
-        protected List<int> config;
+        protected readonly List<int> _config;
+        protected readonly List<int> _originalConfig;
+
         public Component(List<int> config)
         {
-            this.config = config;
+            _config = new List<int>(config);
+            _originalConfig = new List<int>(config);
         }
-        public int Encode(int letter, bool isBeforeReflector)
+
+        public virtual int Encode(int input, bool isBeforeReflector = true)
         {
-            Console.WriteLine("Line 15");
-            Console.WriteLine(letter);
-            foreach(int i in config)
+            if (input < 0 || input >= _config.Count)
             {
-                Console.WriteLine(i);
+                throw new ArgumentOutOfRangeException(nameof(input), "Input must be between 0 and 25");
             }
-            if (isBeforeReflector)
-            {
-                return config[letter];
-            }
-            return config.IndexOf(letter);
+
+            return isBeforeReflector ? _config[input] : _config.IndexOf(input);
         }
-        public int Encode(int letter)
+
+        public virtual void Reset()
         {
-            Console.WriteLine("Do I ever get called?");
-            Console.WriteLine(letter);
-            if (letter < 13)
+            _config.Clear();
+            _config.AddRange(_originalConfig);
+        }
+
+        protected void ValidateInput(int input)
+        {
+            if (input < 0 || input >= EnigmaConfiguration.AlphabetSize)
             {
-                return config[letter];
+                throw new ArgumentOutOfRangeException(nameof(input), $"Input must be between 0 and {EnigmaConfiguration.AlphabetSize - 1}");
             }
-            return config.IndexOf(letter);
         }
     }
 }
